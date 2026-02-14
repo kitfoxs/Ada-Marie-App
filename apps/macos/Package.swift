@@ -21,7 +21,8 @@ let package = Package(
         .package(url: "https://github.com/sparkle-project/Sparkle", from: "2.8.1"),
         .package(url: "https://github.com/steipete/Peekaboo.git", branch: "main"),
         .package(path: "../shared/AdaMarieKit"),
-        .package(path: "../../Swabble"),
+        // TODO: Swabble was OpenClaw's custom auto-updater — replace with our own or Sparkle direct
+        // .package(path: "../../Swabble"),
     ],
     targets: [
         .target(
@@ -47,7 +48,7 @@ let package = Package(
                 .product(name: "AdaMarieKit", package: "AdaMarieKit"),
                 .product(name: "AdaMarieChatUI", package: "AdaMarieKit"),
                 .product(name: "AdaMarieProtocol", package: "AdaMarieKit"),
-                .product(name: "SwabbleKit", package: "swabble"),
+                // TODO: SwabbleKit (auto-updater) removed — wire Sparkle directly
                 .product(name: "MenuBarExtraAccess", package: "MenuBarExtraAccess"),
                 .product(name: "Subprocess", package: "swift-subprocess"),
                 .product(name: "Logging", package: "swift-log"),
@@ -83,7 +84,6 @@ let package = Package(
                 "AdaMarie",
                 "AdaMarieDiscovery",
                 .product(name: "AdaMarieProtocol", package: "AdaMarieKit"),
-                .product(name: "SwabbleKit", package: "swabble"),
             ],
             swiftSettings: [
                 .enableUpcomingFeature("StrictConcurrency"),

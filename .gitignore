@@ -32,3 +32,4 @@ build/
 *.ipa
 *.dSYM.zip
 *.dSYM
+.venv/

@@ -1,7 +1,7 @@
 import AVFoundation
 import Foundation
 import Speech
-import SwabbleKit
+// import SwabbleKit  // TODO: removed — was OpenClaw auto-updater
 
 enum VoiceWakeTestState: Equatable {
     case idle

@@ -1,5 +1,5 @@
 import Foundation
-import SwabbleKit
+// import SwabbleKit  // TODO: removed — was OpenClaw auto-updater
 
 enum VoiceWakeTextUtils {
     private static let whitespaceAndPunctuation = CharacterSet.whitespacesAndNewlines

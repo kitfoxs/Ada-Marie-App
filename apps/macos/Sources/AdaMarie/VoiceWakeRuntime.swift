@@ -2,7 +2,7 @@ import AVFoundation
 import Foundation
 import OSLog
 import Speech
-import SwabbleKit
+// import SwabbleKit  // TODO: removed — was OpenClaw auto-updater
 #if canImport(AppKit)
 import AppKit
 #endif

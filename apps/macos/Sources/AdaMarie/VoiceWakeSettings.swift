@@ -2,7 +2,7 @@ import AppKit
 import AVFoundation
 import Observation
 import Speech
-import SwabbleKit
+// import SwabbleKit  // TODO: removed — was OpenClaw auto-updater
 import SwiftUI
 import UniformTypeIdentifiers
 
