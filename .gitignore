@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+*.egg
+.venv/
+venv/
+.env
+
+# ChromaDB local data
+chroma_data/
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM

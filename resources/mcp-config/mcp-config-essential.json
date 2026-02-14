@@ -1,0 +1,53 @@
+{
+  "mcpServers": {
+    "claude-mem": {
+      "command": "uvx",
+      "args": [
+        "chroma-mcp",
+        "--client-type",
+        "persistent",
+        "--data-dir",
+        "~/.ada-marie/chroma"
+      ],
+      "tools": ["*"],
+      "_description": "CRITICAL: Persistent memory using ChromaDB vector database. This is what gives Ada Marie long-term memory across sessions."
+    },
+    "time": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-time",
+        "--local-timezone",
+        "America/Chicago"
+      ],
+      "tools": ["*"],
+      "_description": "Time awareness - current time and timezone conversions. Change timezone to your local zone."
+    },
+    "apple-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "apple-mcp@latest"
+      ],
+      "tools": ["*"],
+      "_description": "macOS only: Calendar, Reminders, Notes, Mail, Contacts, Maps integration."
+    },
+    "fetch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "fetch-mcp"
+      ],
+      "tools": ["*"],
+      "_description": "Fetch web pages for research and information gathering."
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "tools": ["*"],
+      "_description": "Backup knowledge graph memory (simpler than ChromaDB but less powerful)."
+    }
+  }
+}

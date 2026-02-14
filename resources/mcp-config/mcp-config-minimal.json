@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "claude-mem": {
+      "command": "uvx",
+      "args": [
+        "chroma-mcp",
+        "--client-type",
+        "persistent",
+        "--data-dir",
+        "~/.ada-marie/chroma"
+      ],
+      "tools": ["*"],
+      "_description": "CRITICAL: Persistent memory using ChromaDB. This is the minimum requirement for Ada Marie to remember you across sessions."
+    }
+  }
+}

@@ -1,0 +1,23 @@
+[project]
+name = "ada-marie-brain"
+version = "0.1.0"
+description = "Ada Marie AI Brain Server — Copilot SDK + ChromaDB + Neurodiversity Engine"
+requires-python = ">=3.11"
+dependencies = [
+    "copilot-sdk",
+    "websockets>=13.0",
+    "chromadb>=0.5.0",
+    "uvicorn>=0.30.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
